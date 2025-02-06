@@ -12,8 +12,8 @@ Welcome to **XenoWeb IT Solutions**, a leading web development agency providing 
 ## Technologies We Use
 
 - **Frontend:** HTML, CSS, JavaScript, React.js, Next.js
-- **Backend:** Node.js, Express.js, MongoDB, Firebase
-- **Others:** Shopify, WordPress, WooCommerce, Cloud Services
+- **Backend:** Node.js, Express.js, MongoDB, Firebase, Django
+- **Others:** Shopify, WordPress, WooCommerce, Micro services (AWS)
 
 ## Why Choose Us?
 
@@ -23,7 +23,7 @@ Welcome to **XenoWeb IT Solutions**, a leading web development agency providing 
 
 ## Contact Us
 
-- **Email:** [contact@xenowebit.com](mailto:kartik2611mishra@gmail.com)
+- **Email:** [kartik2611mishra@gmail.com](mailto:kartik2611mishra@gmail.com)
 - **Phone:** +91 7879063730
 
 ## Clone Repository
@@ -31,4 +31,4 @@ Welcome to **XenoWeb IT Solutions**, a leading web development agency providing 
 To clone the repository, run the following command in your terminal:
 
 ```bash
-git clone https://github.com/your-username/xenoweb-it-solutions.git
+git clone https://github.com/kartikmishra2004/xenoweb
