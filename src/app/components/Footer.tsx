@@ -6,30 +6,30 @@ export default function Footer() {
     <footer className="border-t">
       <div className="container flex flex-col gap-8 py-8 md:flex-row md:py-12">
         <div className="flex-1 space-y-4">
-          <h2 className="font-bold">Amane Soft</h2>
-          <p className="text-sm text-muted-foreground">Pioneering software solutions for the digital age.</p>
+          <h2 className="font-bold">XenoWeb</h2>
+          <p className="text-sm text-muted-foreground">Empowering innovation with seamless digital experiences.</p>
         </div>
         <div className="grid flex-1 grid-cols-2 gap-12 sm:grid-cols-3">
           <div className="space-y-4">
             <h3 className="text-sm font-medium">Solutions</h3>
             <ul className="space-y-3 text-sm">
               <li>
-                <Link href="/ai-analytics" className="text-muted-foreground transition-colors hover:text-primary">
+                <Link href="/" className="text-muted-foreground transition-colors hover:text-primary">
                   E-Commerce Solutions
                 </Link>
               </li>
               <li>
-                <Link href="/cloud-services" className="text-muted-foreground transition-colors hover:text-primary">
+                <Link href="/" className="text-muted-foreground transition-colors hover:text-primary">
                   Custom Web Portals
                 </Link>
               </li>
               <li>
-                <Link href="/ai-analytics" className="text-muted-foreground transition-colors hover:text-primary">
+                <Link href="/" className="text-muted-foreground transition-colors hover:text-primary">
                   Personal Portfolio
                 </Link>
               </li>
               <li>
-                <Link href="/ai-analytics" className="text-muted-foreground transition-colors hover:text-primary">
+                <Link href="/" className="text-muted-foreground transition-colors hover:text-primary">
                   Web Hosting & Deployment
                 </Link>
               </li>
@@ -44,8 +44,8 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
-                <Link href="/careers" className="text-muted-foreground transition-colors hover:text-primary">
-                  Careers
+                <Link href="/testimonials" className="text-muted-foreground transition-colors hover:text-primary">
+                  Testimonials
                 </Link>
               </li>
             </ul>
@@ -54,23 +54,23 @@ export default function Footer() {
             <h3 className="text-sm font-medium">Connect</h3>
             <div className="flex space-x-4">
               <Link
-                href="https://github.com/amanesoft"
-                className="text-muted-foreground transition-colors hover:text-primary"
-              >
+                target="_blank"
+                href="https://github.com/kartikmishra2004/xenoweb"
+                className="text-muted-foreground transition-colors hover:text-primary">
                 <Github className="h-5 w-5" />
                 <span className="sr-only">GitHub</span>
               </Link>
               <Link
-                href="https://twitter.com/amanesoft"
-                className="text-muted-foreground transition-colors hover:text-primary"
-              >
+                target="_blank"
+                href="https://x.com/kartikmishra01_"
+                className="text-muted-foreground transition-colors hover:text-primary">
                 <Twitter className="h-5 w-5" />
                 <span className="sr-only">Twitter</span>
               </Link>
               <Link
-                href="https://linkedin.com/company/amanesoft"
-                className="text-muted-foreground transition-colors hover:text-primary"
-              >
+                target="_blank"
+                href="https://www.linkedin.com/in/kartikmishra2004/"
+                className="text-muted-foreground transition-colors hover:text-primary">
                 <Linkedin className="h-5 w-5" />
                 <span className="sr-only">LinkedIn</span>
               </Link>
