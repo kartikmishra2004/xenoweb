@@ -15,12 +15,22 @@ export default function Footer() {
             <ul className="space-y-3 text-sm">
               <li>
                 <Link href="/ai-analytics" className="text-muted-foreground transition-colors hover:text-primary">
-                  AI Analytics
+                  E-Commerce Solutions
                 </Link>
               </li>
               <li>
                 <Link href="/cloud-services" className="text-muted-foreground transition-colors hover:text-primary">
-                  Cloud Services
+                  Custom Web Portals
+                </Link>
+              </li>
+              <li>
+                <Link href="/ai-analytics" className="text-muted-foreground transition-colors hover:text-primary">
+                  Personal Portfolio
+                </Link>
+              </li>
+              <li>
+                <Link href="/ai-analytics" className="text-muted-foreground transition-colors hover:text-primary">
+                  Web Hosting & Deployment
                 </Link>
               </li>
             </ul>
@@ -70,7 +80,7 @@ export default function Footer() {
       </div>
       <div className="container border-t py-6">
         <p className="text-center text-sm text-muted-foreground">
-          © {new Date().getFullYear()} Amane Soft, Inc. All rights reserved.
+          © {new Date().getFullYear()} XenoWeb, Inc. All rights reserved.
         </p>
       </div>
     </footer>
