@@ -1,24 +1,37 @@
+"use client"
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { Github } from "lucide-react"
+import Image from "next/image"
+import { usePathname } from "next/navigation"
+
+interface NavItem {
+  name: string;
+  href: string;
+}
+
+const navItems: NavItem[] = [
+  { name: "Services", href: "/services" },
+  { name: "Testimonials", href: "/testimonials" },
+  { name: "About Us", href: "/about" },
+];
 
 export default function Navbar() {
+
+  const pathname = usePathname();
+
   return (
     <header className="sticky px-4 top-0 z-50 w-full border-b border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <div className="container flex h-16 max-w-screen-2xl items-center">
         <Link href="/" className="mr-6 flex items-center space-x-2">
-          <span className="font-bold">XenoWeb</span>
+          <span><Image className="invert" src='/logo.png' alt="My Image" width={20} height={20} /></span><span className="font-bold">XenoWeb</span>
         </Link>
-        <nav className="flex flex-1 items-center space-x-6 text-sm font-medium">
-          <Link href="/services" className="transition-colors hover:text-primary">
-            Services
-          </Link>
-          <Link href="/testimonials" className="transition-colors hover:text-primary">
-            Testimonials
-          </Link>
-          <Link href="/about" className="transition-colors hover:text-primary">
-            About Us
-          </Link>
+        <nav className="flex flex-1 px-6 items-center space-x-6 text-sm font-medium">
+          {navItems.map((item) => (
+            <Link key={item.href} href={item.href} className={`transition-colors ${pathname === item.href ? 'text-primary' : 'text-gray-400'} hover:text-primary`}>
+              {item.name}
+            </Link>
+          ))}
         </nav>
         <div className="flex items-center space-x-4">
           <Link href="https://github.com/amanesoft" target="_blank" rel="noreferrer">

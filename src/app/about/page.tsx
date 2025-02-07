@@ -1,4 +1,4 @@
-export default function Testimonials() {
+export default function About() {
     return (
         <div className="relative min-h-screen">
             <div className="pointer-events-none fixed inset-0">
@@ -7,7 +7,7 @@ export default function Testimonials() {
                 <div className="absolute bottom-0 left-0 h-[500px] w-[500px] bg-purple-500/10 blur-[100px]" />
             </div>
             <div className="relative z-10">
-                Testimonials
+                About Us
             </div>
         </div>
     );
