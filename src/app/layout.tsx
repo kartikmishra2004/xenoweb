@@ -3,6 +3,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { Inter } from "next/font/google"
 import MouseMoveEffect from "@/components/mouse-move-effect"
+import Navbar from "./components/Navbar";
 
 const inter = Inter({ subsets: ["latin"] })
 
@@ -30,6 +31,7 @@ export default function RootLayout({
     <html lang="en" className="dark">
     <body className={`${inter.className} bg-background text-foreground antialiased`}>
       <MouseMoveEffect />
+      <Navbar />
       {children}
     </body>
   </html>
