@@ -1,14 +1,28 @@
+import {
+    ResizableHandle,
+    ResizablePanel,
+    ResizablePanelGroup,
+  } from "@/components/ui/resizable"
 export default function Services() {
     return (
-        <div className="relative min-h-screen">
-            <div className="pointer-events-none fixed inset-0">
-                <div className="absolute inset-0 bg-gradient-to-b from-background via-background/90 to-background" />
-                <div className="absolute right-0 top-0 h-[500px] w-[500px] bg-blue-500/10 blur-[100px]" />
-                <div className="absolute bottom-0 left-0 h-[500px] w-[500px] bg-purple-500/10 blur-[100px]" />
-            </div>
-            <div className="relative z-10">
-                Services
-            </div>
+        <div>
+            <ResizablePanelGroup
+      direction="vertical"
+      className="min-h-[200px] max-w-md rounded-lg border md:min-w-[10px]"
+    >
+      <ResizablePanel defaultSize={75}>
+        <div className="flex h-full items-center justify-center p-6">
+          <span className="font-semibold">Header</span>
+        </div>
+      </ResizablePanel>
+      <ResizableHandle />
+      <ResizablePanel defaultSize={75}>
+        <div className="flex h-full items-center justify-center p-6">
+          <span className="font-semibold">Content</span>
+        </div>
+      </ResizablePanel>
+    </ResizablePanelGroup>
+    
         </div>
     );
 }
