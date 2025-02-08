@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button"
+import Link from "next/link"
 
 export default function CTA() {
   return (
@@ -11,9 +12,11 @@ export default function CTA() {
           Join leading companies who trust XenoWeb to drive their digital transformation and stay ahead in the
           rapidly evolving tech landscape.
         </p>
-        <Button size="lg" className="mt-4">
-          Get Started Today
-        </Button>
+        <Link href='/contact'>
+          <Button size="lg" className="mt-4">
+            Get Started Today
+          </Button>
+        </Link>
       </div>
     </section>
   )
