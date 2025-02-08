@@ -28,7 +28,7 @@ export default function Navbar() {
         </Link>
         <nav className="flex flex-1 px-3 items-center space-x-6 text-sm font-medium">
           {navItems.map((item) => (
-            <Link key={item.href} href={item.href} className={`transition-colors ${pathname === item.href ? 'text-primary' : 'text-gray-400'} hover:text-primary`}>
+            <Link key={item.href} href={item.href} className={`transition-colors ${pathname === item.href ? 'text-primary' : 'text-muted-foreground'} hover:text-primary`}>
               {item.name}
             </Link>
           ))}
